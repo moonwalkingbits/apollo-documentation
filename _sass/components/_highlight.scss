@@ -1,0 +1,56 @@
+.highlight {
+    @at-root pre#{&} {
+        background: #ffffff; // Normal
+        border-radius: 2px;
+        color: #808080; // Normal
+        overflow-x: auto;
+        padding: 0.5em;
+        box-shadow: #afafaf 1px 1px 3px;
+    }
+
+    @at-root div#{&} {
+        margin-bottom: 2em;
+    }
+
+    // PreProc
+    .k {
+        color: #949494;
+    }
+
+    // Operator
+    .p {
+        color: 4e4e4e;
+    }
+
+    // Type
+    .o {
+        color: #8a8a8a;
+        font-weight: 600;
+    }
+
+    // Function
+    .nx {
+        color: #666666;
+    }
+
+    // Type
+    .kd {
+        color: #8a8a8a;
+        font-weight: 600;
+    }
+
+    // String
+    .dl {
+        color: #808080;
+    }
+
+    // String
+    .s2 {
+        color: #808080;
+    }
+
+    // Number
+    .mi {
+        color: #949494;
+    }
+}

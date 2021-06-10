@@ -1,0 +1,10 @@
+@import "settings/header";
+@import "settings/sidebar";
+
+body {
+    display: grid;
+    grid-template-areas: "header header" "sidebar content" "footer footer";
+    grid-template-columns: $sidebar--width minmax(0, 1fr);
+    grid-template-rows: $header--height minmax(0, 1fr) auto;
+    min-height: 100vh;
+}

@@ -1,0 +1,7 @@
+@import "settings/footer";
+
+.footer {
+    grid-area: footer;
+    padding: $footer--padding;
+    background: #262626;
+}

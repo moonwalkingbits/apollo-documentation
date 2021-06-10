@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+</head>
+<body>
+    {{ content }}
+
+    <script type="module">
+        const url  = new URL("https://fonts.googleapis.com/css2");
+
+        url.searchParams.append("family", "Courier Prime");
+        url.searchParams.append("family", "Montserrat Subrayada");
+        url.searchParams.append("family", "Source Code Pro:wght@400;600");
+        url.searchParams.set("display", "swap");
+
+        const response = await fetch(url);
+        const fontStyleElement = document.createElement("style");
+
+        fontStyleElement.textContent = await response.text();
+        document.head.appendChild(fontStyleElement);
+    </script>
+</body>
+</html>

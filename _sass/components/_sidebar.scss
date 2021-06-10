@@ -1,0 +1,9 @@
+@import "settings/sidebar";
+
+.sidebar {
+    background: #ffffff;
+    grid-area: sidebar;
+    width: $sidebar--width;
+    box-shadow: #afafaf 0 0 3px;
+    padding: 2em 1em;
+}

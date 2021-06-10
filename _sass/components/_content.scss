@@ -1,0 +1,8 @@
+@import "settings/content";
+
+.content {
+    margin: 0 auto;
+    max-width: 80ch;
+    padding: $content--padding;
+    width: 100%;
+}

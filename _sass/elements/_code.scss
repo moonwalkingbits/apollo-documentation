@@ -1,0 +1,14 @@
+code {
+    background: #ffffff;
+    border-radius: 3px;
+    font-family: Source Code Pro, Consolas, monospace;
+    font-size: 13.33px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.25em;
+
+    pre & {
+        background: none;
+        padding: 0;
+    }
+}
